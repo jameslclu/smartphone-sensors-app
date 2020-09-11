@@ -2,8 +2,9 @@ package c.hernanrazo.sensorapp;
 
 import android.Manifest;
 import android.location.Location;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,7 @@ public class GPSActivity extends AppCompatActivity {
         longText = findViewById(R.id.longText);
 
         //request permission for GPS access
+
         ActivityCompat.requestPermissions(GPSActivity.this,
                 new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                 LOCATION_REQUEST);

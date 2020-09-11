@@ -7,7 +7,10 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
+//import android.support.v4.content.ContextCompat;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
 import android.widget.Toast;
 
 //this class does not have an .xml file since it's more of a helper class
